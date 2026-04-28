@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="myForm" onsubmit="return validateForm()"> Name: <input type="text" name="fname">
+        <input type="submit" value="Submit">
+    </form>
+    <hr>
+    <p>Enter a number and click OK:</p>
+    <input id="id" type="number" min="100" max="300" required>
+    <button onclick="myFunction()">OK</button>
+    <p>If the number is less than 100 or greater than 300, an error message will be displayed</p>
+    <p id="result"></p>
+    <hr>
+    <button onclick="demo()">OK</button>
+    <hr>
+    <p>Enter you age and click CHECK</p>
+    <input id="idd" type="number" min="18" max="90" required>
+    <button onclick="agechecker()">CHECK</button>
+    <p>If the age is less than 18 is will show an error message</p>
+    <p id="checker"></p>
+    <script src="script.js"></script>
+</body>
+</html>
